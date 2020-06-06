@@ -51,4 +51,17 @@ def amst(num):
 # %%
 amst(1634)
 # %%
-help(123456765)
+import os
+dir_name = '煎蛋IMG'
+get_path = os.getcwd()
+path_dir = get_path + "\\" + dir_name
+
+# %%
+not os.path.isdir(path_dir)
+
+# %%
+if not os.path.isdir(path_dir):
+            print(f"创建煎{dir_name}文件夹成功")
+            os.mkdir(path_dir)
+        else:
+            print(f"{dir_name}G文件夹已存在创建失败")
